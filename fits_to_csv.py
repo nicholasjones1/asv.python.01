@@ -58,7 +58,7 @@ class FitsHeaderExtractor:
         csv_row["Object"] = str(fits_file.get_object())
         csv_row["Binning"] = str(fits_file.get_binning())
         csv_row["Filter"] = str(fits_file.get_filter())
-        csv_row["Focuser_pos"] = fits_file.get_focus_position()
+        csv_row["Focuser_pos"] = int(fits_file.get_focus_position())
         csv_row["Focuser_temp"] = fits_file.get_focus_temp()
         csv_row["Sensor_temp"] = fits_file.get_sensor_temp()
         csv_row["RA"] = str(fits_file.get_ra())
